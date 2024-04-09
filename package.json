@@ -1,0 +1,29 @@
+{
+  "name": "ifs-chat-svc",
+  "version": "1.0.0",
+  "description": "Intelliflow Chat Application Server",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "devStart": "set NODE_ENV=development && nodemon index.js",
+    "start:prod": "export NODE_ENV=production && nodemon index.js",
+    "start:prod-windows": "set NODE_ENV=production && nodemon index.js",
+    "start:colo": "export NODE_ENV=colo && node index.js",
+    "start:colo-windows": "set NODE_ENV=colo && nodemon index.js",
+    "start:uat": "export NODE_ENV=uat && nodemon index.js",
+    "start:uat-windows": "set NODE_ENV=uat && nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.2",
+    "mongodb": "^5.7.0",
+    "nodemon": "^2.0.15",
+    "socket.io": "^4.4.1"
+  }
+}
